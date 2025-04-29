@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logos Lumen - Humanity's Unburnable Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Georgia:ital@1&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Georgia', serif;
       background-image: url('wallpaper01.jpg');
       background-size: cover;
       background-position: center;
@@ -20,34 +21,56 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+      z-index: 1;
     }
     .container {
-      padding: 30px;
-      max-width: 600px;
+      position: relative;
+      z-index: 2;
+      padding: 25px;
+      max-width: 550px;
       width: 100%;
       box-sizing: border-box;
     }
-    h1 {
-      font-size: 32px;
+    .header {
       margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    .header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 36px;
+      margin: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+    .header p {
+      font-size: 16px;
+      font-style: italic;
+      color: #ddd;
+      margin: 5px 0 0;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
     .library-section {
       background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 8px;
       padding: 20px;
       color: #333;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
-    .library-section h2 {
-      font-size: 24px;
-      margin-bottom: 15px;
-      color: #222;
     }
     .library-section p {
       font-size: 16px;
-      color: #555;
+      color: #444;
       margin-bottom: 20px;
+      line-height: 1.5;
     }
     .library-section ul {
       list-style-type: none;
@@ -55,30 +78,35 @@
       margin: 0;
     }
     .library-section li {
-      margin: 10px 0;
+      margin: 12px 0;
     }
     .library-section a {
       font-size: 16px;
-      color: #007bff;
+      color: #1e90ff;
       text-decoration: none;
-      transition: color 0.3s ease;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
     .library-section a:hover {
-      color: #0056b3;
-      text-decoration: underline;
+      color: #fff;
+      background-color: #1e90ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Logos Lumen - Humanity's Unburnable Library</h1>
+    <div class="header">
+      <h1>Logos Lumen</h1>
+      <p>Humanity’s Unburnable Library</p>
+    </div>
     <div class="library-section">
-      <h2>Unburnable Library</h2>
       <p>Access classic texts preserved on IPFS and the Dogecoin blockchain:</p>
       <ul>
-        <li><a href="https://ipfs.io/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">Rules of Civility</a></li>
-        <li><a href="https://ipfs.io/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">Leaves of Grass</a></li>
-        <li><a href="https://ipfs.io/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">Travels of Little Baron Trump</a></li>
+        <li><a href="https://dweb.link/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">Rules of Civility</a></li>
+        <li><a href="https://dweb.link/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">Leaves of Grass</a></li>
+        <li><a href="https://dweb.link/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">Travels of Little Baron Trump</a></li>
       </ul>
     </div>
   </div>
