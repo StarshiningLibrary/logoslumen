@@ -13,46 +13,58 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+      background-color: #1a1a1a;
       color: #fff;
       text-align: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .container {
-      padding: 40px;
-      max-width: 800px;
-      margin: 0 auto;
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+      box-sizing: border-box;
     }
     h1 {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
-    .unburnable-library-section {
+    .library-section {
       background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 5px;
+      border-radius: 8px;
       padding: 20px;
-      margin: 20px 0;
       color: #333;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
-    .unburnable-library-section h2 {
+    .library-section h2 {
       font-size: 24px;
-      margin-bottom: 10px;
-    }
-    .unburnable-library-section p {
-      color: #666;
       margin-bottom: 15px;
+      color: #222;
     }
-    .unburnable-library-section ul {
+    .library-section p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    .library-section ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
     }
-    .unburnable-library-section li {
+    .library-section li {
       margin: 10px 0;
     }
-    .unburnable-library-section a {
+    .library-section a {
+      font-size: 16px;
       color: #007bff;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
-    .unburnable-library-section a:hover {
+    .library-section a:hover {
+      color: #0056b3;
       text-decoration: underline;
     }
   </style>
@@ -60,13 +72,13 @@
 <body>
   <div class="container">
     <h1>Logos Lumen - Humanity's Unburnable Library</h1>
-    <div class="unburnable-library-section">
+    <div class="library-section">
       <h2>Unburnable Library</h2>
       <p>Access classic texts preserved on IPFS and the Dogecoin blockchain:</p>
       <ul>
-        <li><a href="https://gateway.pinata.cloud/ipns/k51qzi5uqu5dlwy7gjuu7fl0nk92oh5dis5y9idehbzu4wx0pnjeb98g75jxot/rules_of_civility.txt" target="_blank">Rules of Civility</a></li>
-        <li><a href="https://gateway.pinata.cloud/ipns/k51qzi5uqu5dlwy7gjuu7fl0nk92oh5dis5y9idehbzu4wx0pnjeb98g75jxot/leaves_of_grass.txt" target="_blank">Leaves of Grass</a></li>
-        <li><a href="https://gateway.pinata.cloud/ipns/k51qzi5uqu5dlwy7gjuu7fl0nk92oh5dis5y9idehbzu4wx0pnjeb98g75jxot/little_baron_trump.txt" target="_blank">Travels of Little Baron Trump</a></li>
+        <li><a href="https://ipfs.io/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">Rules of Civility</a></li>
+        <li><a href="https://ipfs.io/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">Leaves of Grass</a></li>
+        <li><a href="https://ipfs.io/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">Travels of Little Baron Trump</a></li>
       </ul>
     </div>
   </div>
