@@ -42,16 +42,19 @@ CID: bafybeihkps2exbyd6hgzukwlfvajjfi4m2o4h7jfomepgr2ay7vnflfgda
 IPFS Link: Access on IPFS
 Date: 5/10/2025
 
-What Is Public Domain and Why Does It Matter?
+The Art of War by Sun Tzu
 
+TXID: a8849ca29b0d81da42ba35a1e66e00df9a8058a88b7a2c66375930a2f28ee12b
+CID: bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue
+IPFS Link: Access on IPFS
+Date: 5/11/2025
+
+What Is Public Domain and Why Does It Matter?
 What Is Public Domain? Public domain means a work—like a book, song, or piece of art—isn’t protected by copyright anymore. This usually happens when the copyright expires (for example, in the U.S., works published before 1929 are typically public domain as of 2025). When something is in the public domain, anyone can use, share, or build on it for free, without needing permission.
 Why It Matters for the Library: The Unburnable Library uses public domain works because they belong to everyone. This lets us preserve and share classic works—like "Leaves of Grass" or "The Secret Teachings of All Ages"—without legal barriers. By putting these works on the Dogecoin blockchain and IPFS, we’re making sure they stay accessible forever, even in places where censorship or data loss might be a challenge.
-
 What Is Web 3 and Why Does It Matter for the Library?
-
 What Is Web 3? Web 3 is the next evolution of the internet, focused on decentralization and user control. Unlike Web 2, where big platforms often control data, Web 3 uses technologies like blockchain to distribute data across networks, making it more secure and censorship-resistant. For the Unburnable Library, Web 3 means we can store and share works in a way that no single entity can control or erase.
 The Role of IPFS and Dogecoin in Web 3: IPFS and Dogecoin are key to our Web 3 approach. IPFS lets us store works across a distributed network, ensuring they’re always available, even if parts of the internet are down. Dogecoin’s blockchain lets us inscribe references to these works, creating a permanent, tamper-proof record that anyone can verify. Together, they make the Unburnable Library a truly decentralized archive for humanity’s classics.
-
 How to Access Preserved Works
 To access a preserved work, follow these steps:
 
