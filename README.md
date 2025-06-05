@@ -1,5 +1,3 @@
-# LogosLumen - Humanity's Unburnable Library - A Decentralized Archive Preserving Knowledge on the Dogecoin Blockchain and IPFS
-
 ## Preserved Works
 
 ### *Rules of Civility and Decent Behavior in Company and Conversation* by George Washington
@@ -51,26 +49,9 @@
 - **IPFS Link**: [Access on IPFS](https://bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue.ipfs.dweb.link?filename=The%20Art%20of%20War.txt)
 - **Date**: 5/11/2025
 
-## What Is Public Domain and Why Does It Matter?
+### *The Road Not Taken* by Robert Frost
 
-**What Is Public Domain?** Public domain means a work—like a book, song, or piece of art—isn’t protected by copyright anymore. This usually happens when the copyright expires (for example, in the U.S., works published before 1929 are typically public domain as of 2025). When something is in the public domain, anyone can use, share, or build on it for free, without needing permission.
-
-**Why It Matters for the Library:** The Unburnable Library uses public domain works because they belong to everyone. This lets us preserve and share classic works—like "Leaves of Grass" or "The Secret Teachings of All Ages"—without legal barriers. By putting these works on the Dogecoin blockchain and IPFS, we’re making sure they stay accessible forever, even in places where censorship or data loss might be a challenge.
-
-## What Is Web 3 and Why Does It Matter for the Library?
-
-**What Is Web 3?** Web 3 is the next evolution of the internet, focused on decentralization and user control. Unlike Web 2, where big platforms often control data, Web 3 uses technologies like blockchain to distribute data across networks, making it more secure and censorship-resistant. For the Unburnable Library, Web 3 means we can store and share works in a way that no single entity can control or erase.
-
-**The Role of IPFS and Dogecoin in Web 3:** IPFS and Dogecoin are key to our Web 3 approach. IPFS lets us store works across a distributed network, ensuring they’re always available, even if parts of the internet are down. Dogecoin’s blockchain lets us inscribe references to these works, creating a permanent, tamper-proof record that anyone can verify. Together, they make the Unburnable Library a truly decentralized archive for humanity’s classics.
-
-## How to Access Preserved Works
-
-To access a preserved work, follow these steps:
-
-1. Find the transaction on the Dogecoin blockchain using the TXID (e.g., via Sochain: [Rules of Civility TXID](https://sochain.com/tx/DOGE/4a74eb4c9492b01b8bf5c58f248d90b813ad4cb0fdc171c4aa341ce8f1bd4bf5)).
-2. Extract the OP_RETURN data, which contains the IPFS CID.
-3. Click the provided IPFS link to access the text file directly, or use the IPFS CID in an IPFS gateway (like ipfs.io) by entering the CID into the gateway's URL (e.g., https://ipfs.io/ipfs/[CID]).
-
-## Contact
-
-Have questions or suggestions? Reach out on X: [@StarshiningDoge](https://x.com/StarshiningDoge)
+- **TXID**: 41b31b63daa633ec61f70db9c99721c9db9e882db8cb2c342fbfc0ce99f1b9c4
+- **CID**: QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh
+- **IPFS Link**: [Access on IPFS](https://gateway.pinata.cloud/ipfs/QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh)
+- **Date**: 6/4/2025
