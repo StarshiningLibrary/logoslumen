@@ -30,101 +30,104 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
       z-index: 1;
     }
     .container {
       position: relative;
       z-index: 2;
-      padding: 25px;
-      max-width: 700px;
+      padding: 30px;
+      max-width: 800px;
       width: 100%;
       box-sizing: border-box;
     }
     .header {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     .header h1 {
       font-family: 'Special+Elite', monospace;
-      font-size: 40px;
+      font-size: 42px;
       margin: 0;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-      letter-spacing: 2px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+      letter-spacing: 3px;
       white-space: nowrap;
     }
     .header p {
       font-size: 18px;
       font-style: italic;
-      color: #ddd;
+      color: #e0e0e0;
       margin: 10px 0 0;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
     .mission-section {
       text-align: left;
-      margin-bottom: 30px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 8px;
+      margin-bottom: 40px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 10px;
     }
     .mission-section h2 {
-      font-size: 20px;
-      margin-bottom: 15px;
+      font-size: 22px;
+      margin-bottom: 20px;
       color: #fff;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      font-weight: 600;
     }
     .mission-section p {
-      font-size: 15px;
-      color: #ddd;
-      line-height: 1.6;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-      margin-bottom: 15px;
+      font-size: 16px;
+      color: #e0e0e0;
+      line-height: 1.7;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      margin-bottom: 20px;
     }
     .library-section {
-      background-color: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      padding: 25px;
       color: #333;
       text-align: left;
     }
     .library-section h2 {
-      font-size: 22px;
-      margin-bottom: 15px;
+      font-size: 24px;
+      margin-bottom: 20px;
       color: #1e90ff;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      font-weight: 600;
     }
     .library-section .collapsible {
-      background-color: #f9f9f9;
+      background-color: #f0f0f0;
       color: #444;
       cursor: pointer;
-      padding: 10px;
+      padding: 12px;
       border: none;
       text-align: left;
       outline: none;
-      font-size: 16px;
+      font-size: 17px;
       width: 100%;
-      border-radius: 4px;
-      margin-bottom: 10px;
+      border-radius: 5px;
+      margin-bottom: 12px;
       transition: background-color 0.3s;
+      font-weight: 500;
     }
     .library-section .collapsible:hover {
-      background-color: #e0e0e0;
+      background-color: #d0d0d0;
     }
     .library-section .content {
       display: none;
-      padding: 10px 15px;
+      padding: 15px 20px;
       background-color: #fff;
-      border-left: 4px solid #1e90ff;
-      margin-bottom: 10px;
-      font-size: 14px;
-      color: #666;
-      line-height: 1.5;
+      border-left: 5px solid #1e90ff;
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
     }
     .library-section .content a {
       color: #1e90ff;
       text-decoration: none;
-      padding: 2px 5px;
-      border-radius: 3px;
+      padding: 3px 7px;
+      border-radius: 4px;
       transition: background-color 0.3s;
     }
     .library-section .content a:hover {
@@ -132,9 +135,9 @@
       color: #fff;
     }
     .contact {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #444;
+      margin-top: 25px;
+      font-size: 15px;
+      color: #666;
     }
   </style>
   <script>
@@ -161,47 +164,55 @@
       <p>Humanity’s Unburnable Library</p>
     </div>
     <div class="mission-section">
-      <h2>Our Vision</h2>
-      <p>Logos Lumen is born from a passion to preserve humanity’s classics. We gather public domain works—freed from copyright as of 2025 for pre-1929 U.S. publications—offering them to all for use, sharing, and inspiration without barriers.</p>
-      <h2>Web 3 Foundation</h2>
-      <p>Built on Web 3’s decentralized promise, we use blockchain and distributed networks to shield these treasures from censorship or loss, ensuring they endure as a shared heritage.</p>
-      <h2>Preservation Through Technology</h2>
-      <p>IPFS stores our works across a global network, keeping them accessible even if parts of the web falter. Dogecoin’s blockchain inscribes their records, creating an eternal, tamper-proof legacy for all to cherish.</p>
+      <h2>Our Mission</h2>
+      <p>Logos Lumen is dedicated to preserving public domain works, those no longer under copyright protection as of 2025 for pre-1929 U.S. publications. These materials are freely available for use, distribution, and adaptation without legal constraints.</p>
+      <h2>Web 3 Infrastructure</h2>
+      <p>Utilizing Web 3 technologies, we employ decentralized systems to protect these works from censorship or data loss, ensuring their availability as a shared cultural resource.</p>
+      <h2>Technological Preservation</h2>
+      <p>IPFS provides distributed storage across a global network, maintaining accessibility even during network disruptions. Dogecoin’s blockchain records references to these works, establishing a permanent, immutable archive.</p>
     </div>
     <div class="library-section">
-      <h2>Explore the Collection</h2>
+      <h2>Collection Overview</h2>
       <button class="collapsible">Rules of Civility</button>
       <div class="content">
-        <p><a href="https://dweb.link/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">View Work</a> - _The inaugural entry, a tender dedication to mothers on their special day, marking the library’s loving birth._</p>
+        <p><a href="https://dweb.link/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">Access Document</a> - The inaugural entry, initiated as a dedication to mothers, marking the library’s foundation.</p>
       </div>
       <button class="collapsible">Leaves of Grass</button>
       <div class="content">
-        <p><a href="https://dweb.link/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">View Work</a> - _Born as “Learn’d Astronomer,” this grew with the library’s vision, embracing the vastness of the human spirit._</p>
+        <p><a href="https://dweb.link/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">Access Document</a> - Originally limited to “Learn’d Astronomer,” expanded to reflect the library’s evolving scope.</p>
       </div>
       <button class="collapsible">Travels of Little Baron Trump</button>
       <div class="content">
-        <p><a href="https://dweb.link/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">View Work</a> - _A playful first request, this whimsical tale danced into our collection, sparking joy in our early days._</p>
+        <p><a href="https://dweb.link/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">Access Document</a> - The first community request, a lighthearted addition to the early collection.</p>
       </div>
       <button class="collapsible">The Vegetable Garden</button>
       <div class="content">
-        <p><a href="https://dweb.link/ipfs/QmWp5MbCDKUegUbpswDvQ6vLy8zdczBug6QT6KJKTktzZx" target="_blank">View Work</a> - _A milestone of growth, this first PDF upload nurtured our craft with its earthy wisdom._</p>
+        <p><a href="https://dweb.link/ipfs/QmWp5MbCDKUegUbpswDvQ6vLy8zdczBug6QT6KJKTktzZx" target="_blank">Access Document</a> - The initial PDF upload, a foundational step in our archival process.</p>
       </div>
       <button class="collapsible">The Secret Teachings of All Ages</button>
       <div class="content">
-        <p><a href="https://dweb.link/ipfs/bafybeibkdfozrjxqla4peqd4b5bstpjcwrot3b67tnonktykwe5v4jkzhi" target="_blank">View Work</a> - _The second cherished request from our Dogecoin community, this mystical tome deepened our soulful roots._</p>
+        <p><a href="https://dweb.link/ipfs/bafybeibkdfozrjxqla4peqd4b5bstpjcwrot3b67tnonktykwe5v4jkzhi" target="_blank">Access Document</a> - The second community request, contributing to the library’s diverse holdings.</p>
       </div>
       <button class="collapsible">Little Nemo in Slumberland</button>
       <div class="content">
-        <p><a href="https://gateway.pinata.cloud/ipfs/bafybeihkps2exbyd6hgzukwlfvajjfi4m2o4h7jfomepgr2ay7vnflfgda" target="_blank">View Work</a> - _Inspired by the Dogecoin community’s comic call, this first full-color entry brought a vibrant conversion challenge._</p>
+        <p><a href="https://gateway.pinata.cloud/ipfs/bafybeihkps2exbyd6hgzukwlfvajjfi4m2o4h7jfomepgr2ay7vnflfgda" target="_blank">Access Document</a> - A community-driven comic addition, marking our first full-color conversion effort.</p>
       </div>
       <button class="collapsible">The Art of War</button>
       <div class="content">
-        <p><a href="https://bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue.ipfs.dweb.link?filename=The%20Art%20of%20War.txt" target="_blank">View Work</a> - _A Dogecoin community request, this strategic classic sparked the initial flame of our library’s vision._</p>
+        <p><a href="https://bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue.ipfs.dweb.link?filename=The%20Art%20of%20War.txt" target="_blank">Access Document</a> - A community request, one of the early influences shaping the library’s purpose.</p>
       </div>
       <button class="collapsible">The Road Not Taken</button>
       <div class="content">
-        <p><a href="https://gateway.pinata.cloud/ipfs/QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh" target="_blank">View Work</a> - _A milestone of innovation, this first Python and VSCode script stepped us beyond manual paths._</p>
+        <p><a href="https://gateway.pinata.cloud/ipfs/QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh" target="_blank">Access Document</a> - The first use of Python and VSCode scripting, advancing our technical methodology.</p>
       </div>
       <button class="collapsible">The Children's Own Longfellow (Vietnamese/English)</button>
       <div class="content">
-        <p><a href="https://gateway.pinata.cloud/ipfs/bafybeicb3yciyaebp2rgjn45vhzmy7ljfb7zg3ftbe
+        <p><a href="https://gateway.pinata.cloud/ipfs/bafybeicb3yciyaebp2rgjn45vhzmy7ljfb7zg3ftbe627373lqn76wwkke" target="_blank">Access Document</a> - The first bilingual entry, offering Vietnamese and English versions to expand cultural reach.</p>
+      </div>
+      <div class="contact">
+        <p>For inquiries or contributions, contact us on X: <a href="https://x.com/StarshiningDoge" target="_blank">@StarshiningDoge</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
