@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logos Lumen - Humanity's Unburnable Library</title>
+  <title>Logos Lumen - Humanity’s Unburnable Library</title>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <style>
     body {
@@ -37,7 +37,7 @@
       position: relative;
       z-index: 2;
       padding: 25px;
-      max-width: 550px;
+      max-width: 600px;
       width: 100%;
       box-sizing: border-box;
     }
@@ -68,6 +68,12 @@
     .mission-section div {
       width: 48%;
     }
+    .mission-section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
     .mission-section p {
       font-size: 14px;
       color: #ddd;
@@ -88,7 +94,8 @@
       margin: 0;
     }
     .library-section li {
-      margin: 12px 0;
+      margin: 15px 0;
+      text-align: left;
     }
     .library-section a {
       font-size: 16px;
@@ -97,11 +104,19 @@
       padding: 5px 10px;
       border-radius: 4px;
       transition: background-color 0.3s ease, color 0.3s ease;
+      display: block;
     }
     .library-section a:hover {
       color: #fff;
       background-color: #1e90ff;
       text-decoration: none;
+    }
+    .library-section p {
+      font-size: 14px;
+      color: #666;
+      font-style: italic;
+      margin: 5px 0 0;
+      line-height: 1.4;
     }
     .contact {
       margin-top: 20px;
@@ -118,32 +133,44 @@
     </div>
     <div class="mission-section">
       <div>
-        <p><strong>What Is Public Domain?</strong> Public domain means a work—like a book, song, or piece of art—isn’t protected by copyright anymore. This usually happens when the copyright expires (for example, in the U.S., works published before 1929 are typically public domain as of 2025). When something is in the public domain, anyone can use, share, or build on it for free, without needing permission.</p>
-        <p><strong>What Is Web 3?</strong> Web 3 is the next evolution of the internet, focused on decentralization and user control. Unlike Web 2, where big platforms often control data, Web 3 uses technologies like blockchain to distribute data across networks, making it more secure and censorship-resistant. For the Unburnable Library, Web 3 means we can store and share works in a way that no single entity can control or erase.</p>
+        <h2>What Is Public Domain?</h2>
+        <p>Public domain signifies a work—be it a book, song, or artwork—freed from copyright protection. This occurs when copyright expires, such as in the U.S. where works published before 1929 enter the public domain by 2025. Once there, these treasures belong to all, inviting free use, sharing, and creation without restriction.</p>
+        <h2>What Is Web 3?</h2>
+        <p>Web 3 heralds the internet’s next era, championing decentralization and user sovereignty. Unlike Web 2’s centralized platforms, Web 3 leverages blockchain to distribute data across networks, enhancing security and resisting censorship. For our library, this means a decentralized haven where works endure beyond control.</p>
       </div>
       <div>
-        <p><strong>Why It Matters for the Library:</strong> The Unburnable Library uses public domain works because they belong to everyone. This lets us preserve and share classic works without legal barriers. By putting these works on the Dogecoin blockchain and IPFS, we’re making sure they stay accessible forever, even in places where censorship or data loss might be a challenge.</p>
-        <p><strong>The Role of IPFS and Dogecoin in Web 3:</strong> IPFS and Dogecoin are key to our Web 3 approach. IPFS lets us store works across a distributed network, ensuring they’re always available, even if parts of the internet are down. Dogecoin’s blockchain lets us inscribe references to these works, creating a permanent, tamper-proof record that anyone can verify. Together, they make the Unburnable Library a truly decentralized archive for humanity’s classics.</p>
+        <h2>The Library’s Purpose</h2>
+        <p>We embrace public domain works as a gift to humanity, free from legal bounds, allowing us to preserve and share classics with open hearts. By anchoring them on the Dogecoin blockchain and IPFS, we ensure their eternal accessibility, a beacon against censorship or loss.</p>
+        <h2>IPFS and Dogecoin’s Role</h2>
+        <p>IPFS stores our works across a distributed network, guaranteeing availability even if the internet falters. Dogecoin’s blockchain inscribes their references, forging a permanent, unalterable record. Together, they weave the Unburnable Library into a decentralized tapestry of human heritage.</p>
       </div>
     </div>
     <div class="library-section">
       <ul>
-        <!-- Rules of Civility: TXID 4a74eb4c9492b01b8bf5c58f248d90b813ad4cb0fdc171c4aa341ce8f1bd4bf5, CID QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj -->
-        <li><a href="https://dweb.link/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">Rules of Civility</a></li>
-        <!-- Leaves of Grass: TXID e6a2b023345cb1e95bc48524a86e3d69ce976778201f1c2cf69044abb8469e3f, CID QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha -->
-        <li><a href="https://dweb.link/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">Leaves of Grass</a></li>
-        <!-- Travels of Little Baron Trump: TXID 70b8772010261c5c60ca24823181a30d4606f1df32f1a6b04ccd8bdb98f177a3, CID QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe -->
-        <li><a href="https://dweb.link/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">Travels of Little Baron Trump</a></li>
-        <!-- The Vegetable Garden: CID QmWp5MbCDKUegUbpswDvQ6vLy8zdczBug6QT6KJKTktzZx -->
-        <li><a href="https://dweb.link/ipfs/QmWp5MbCDKUegUbpswDvQ6vLy8zdczBug6QT6KJKTktzZx" target="_blank">The Vegetable Garden</a></li>
-        <!-- The Secret Teachings of All Ages: TXID f195e996e07f7a613745953ad95b97e3ff7dc6f57075564422a62d1edc71f24c, CID bafybeibkdfozrjxqla4peqd4b5bstpjcwrot3b67tnonktykwe5v4jkzhi -->
-        <li><a href="https://dweb.link/ipfs/bafybeibkdfozrjxqla4peqd4b5bstpjcwrot3b67tnonktykwe5v4jkzhi" target="_blank">The Secret Teachings of All Ages</a></li>
-        <!-- Little Nemo in Slumberland: TXID f8f85c9cde9b4eb18e8055f616753daf62da579e32485ee89bb0ff94ae5eb469, CID bafybeihkps2exbyd6hgzukwlfvajjfi4m2o4h7jfomepgr2ay7vnflfgda -->
-        <li><a href="https://gateway.pinata.cloud/ipfs/bafybeihkps2exbyd6hgzukwlfvajjfi4m2o4h7jfomepgr2ay7vnflfgda" target="_blank">Little Nemo in Slumberland</a></li>
-        <!-- The Art of War: TXID a8849ca29b0d81da42ba35a1e66e00df9a8058a88b7a2c66375930a2f28ee12b, CID bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue -->
-        <li><a href="https://bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue.ipfs.dweb.link?filename=The%20Art%20of%20War.txt" target="_blank">The Art of War</a></li>
-        <!-- The Road Not Taken: TXID 41b31b63daa633ec61f70db9c99721c9db9e882db8cb2c342fbfc0ce99f1b9c4, CID QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh -->
-        <li><a href="https://gateway.pinata.cloud/ipfs/QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh" target="_blank">The Road Not Taken</a></li>
+        <li><a href="https://dweb.link/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">Rules of Civility</a>
+          <p>_The inaugural entry, a tender dedication to mothers on their special day, marking the library’s loving birth._</p>
+        </li>
+        <li><a href="https://dweb.link/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">Leaves of Grass</a>
+          <p>_Born as “Learn’d Astronomer,” this grew with the library’s vision, embracing the vastness of the human spirit._</p>
+        </li>
+        <li><a href="https://dweb.link/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">Travels of Little Baron Trump</a>
+          <p>_A playful first request, this whimsical tale danced into our collection, sparking joy in our early days._</p>
+        </li>
+        <li><a href="https://dweb.link/ipfs/QmWp5MbCDKUegUbpswDvQ6vLy8zdczBug6QT6KJKTktzZx" target="_blank">The Vegetable Garden</a>
+          <p>_A milestone of growth, this first PDF upload nurtured our craft with its earthy wisdom._</p>
+        </li>
+        <li><a href="https://dweb.link/ipfs/bafybeibkdfozrjxqla4peqd4b5bstpjcwrot3b67tnonktykwe5v4jkzhi" target="_blank">The Secret Teachings of All Ages</a>
+          <p>_The second cherished request from our Dogecoin community, this mystical tome deepened our soulful roots._</p>
+        </li>
+        <li><a href="https://gateway.pinata.cloud/ipfs/bafybeihkps2exbyd6hgzukwlfvajjfi4m2o4h7jfomepgr2ay7vnflfgda" target="_blank">Little Nemo in Slumberland</a>
+          <p>_Inspired by the Dogecoin community’s comic call, this first full-color entry brought a vibrant conversion challenge._</p>
+        </li>
+        <li><a href="https://bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue.ipfs.dweb.link?filename=The%20Art%20of%20War.txt" target="_blank">The Art of War</a>
+          <p>_A Dogecoin community request, this strategic classic sparked the initial flame of our library’s vision._</p>
+        </li>
+        <li><a href="https://gateway.pinata.cloud/ipfs/QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh" target="_blank">The Road Not Taken</a>
+          <p>_A milestone of innovation, this first Python and VSCode script stepped us beyond manual paths._</p>
+        </li>
       </ul>
       <div class="contact">
         <p>Have questions or suggestions? Reach out on X: <a href="https://x.com/StarshiningDoge" target="_blank">@StarshiningDoge</a></p>
