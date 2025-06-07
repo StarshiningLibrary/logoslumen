@@ -37,47 +37,45 @@
       position: relative;
       z-index: 2;
       padding: 25px;
-      max-width: 600px;
+      max-width: 700px;
       width: 100%;
       box-sizing: border-box;
     }
     .header {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .header h1 {
       font-family: 'Special+Elite', monospace;
-      font-size: 36px;
+      font-size: 40px;
       margin: 0;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
       letter-spacing: 2px;
       white-space: nowrap;
     }
     .header p {
-      font-size: 16px;
+      font-size: 18px;
       font-style: italic;
       color: #ddd;
-      margin: 5px 0 0;
+      margin: 10px 0 0;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
     .mission-section {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
       text-align: left;
-    }
-    .mission-section div {
-      width: 48%;
+      margin-bottom: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 8px;
     }
     .mission-section h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
+      font-size: 20px;
+      margin-bottom: 15px;
       color: #fff;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
     .mission-section p {
-      font-size: 14px;
+      font-size: 15px;
       color: #ddd;
-      line-height: 1.5;
+      line-height: 1.6;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
       margin-bottom: 15px;
     }
@@ -87,36 +85,51 @@
       border-radius: 8px;
       padding: 20px;
       color: #333;
-    }
-    .library-section ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-    .library-section li {
-      margin: 15px 0;
       text-align: left;
     }
-    .library-section a {
-      font-size: 16px;
+    .library-section h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
       color: #1e90ff;
-      text-decoration: none;
-      padding: 5px 10px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .library-section .collapsible {
+      background-color: #f9f9f9;
+      color: #444;
+      cursor: pointer;
+      padding: 10px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      width: 100%;
       border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      display: block;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
     }
-    .library-section a:hover {
-      color: #fff;
-      background-color: #1e90ff;
-      text-decoration: none;
+    .library-section .collapsible:hover {
+      background-color: #e0e0e0;
     }
-    .library-section p {
+    .library-section .content {
+      display: none;
+      padding: 10px 15px;
+      background-color: #fff;
+      border-left: 4px solid #1e90ff;
+      margin-bottom: 10px;
       font-size: 14px;
       color: #666;
-      font-style: italic;
-      margin: 5px 0 0;
-      line-height: 1.4;
+      line-height: 1.5;
+    }
+    .library-section .content a {
+      color: #1e90ff;
+      text-decoration: none;
+      padding: 2px 5px;
+      border-radius: 3px;
+      transition: background-color 0.3s;
+    }
+    .library-section .content a:hover {
+      background-color: #1e90ff;
+      color: #fff;
     }
     .contact {
       margin-top: 20px;
@@ -124,6 +137,22 @@
       color: #444;
     }
   </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var coll = document.getElementsByClassName("collapsible");
+      for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    });
+  </script>
 </head>
 <body>
   <div class="container">
@@ -132,50 +161,47 @@
       <p>Humanity’s Unburnable Library</p>
     </div>
     <div class="mission-section">
-      <div>
-        <h2>What Is Public Domain?</h2>
-        <p>Public domain signifies a work—be it a book, song, or artwork—freed from copyright protection. This occurs when copyright expires, such as in the U.S. where works published before 1929 enter the public domain by 2025. Once there, these treasures belong to all, inviting free use, sharing, and creation without restriction.</p>
-        <h2>What Is Web 3?</h2>
-        <p>Web 3 heralds the internet’s next era, championing decentralization and user sovereignty. Unlike Web 2’s centralized platforms, Web 3 leverages blockchain to distribute data across networks, enhancing security and resisting censorship. For our library, this means a decentralized haven where works endure beyond control.</p>
-      </div>
-      <div>
-        <h2>The Library’s Purpose</h2>
-        <p>We embrace public domain works as a gift to humanity, free from legal bounds, allowing us to preserve and share classics with open hearts. By anchoring them on the Dogecoin blockchain and IPFS, we ensure their eternal accessibility, a beacon against censorship or loss.</p>
-        <h2>IPFS and Dogecoin’s Role</h2>
-        <p>IPFS stores our works across a distributed network, guaranteeing availability even if the internet falters. Dogecoin’s blockchain inscribes their references, forging a permanent, unalterable record. Together, they weave the Unburnable Library into a decentralized tapestry of human heritage.</p>
-      </div>
+      <h2>Our Vision</h2>
+      <p>Logos Lumen is born from a passion to preserve humanity’s classics. We gather public domain works—freed from copyright as of 2025 for pre-1929 U.S. publications—offering them to all for use, sharing, and inspiration without barriers.</p>
+      <h2>Web 3 Foundation</h2>
+      <p>Built on Web 3’s decentralized promise, we use blockchain and distributed networks to shield these treasures from censorship or loss, ensuring they endure as a shared heritage.</p>
+      <h2>Preservation Through Technology</h2>
+      <p>IPFS stores our works across a global network, keeping them accessible even if parts of the web falter. Dogecoin’s blockchain inscribes their records, creating an eternal, tamper-proof legacy for all to cherish.</p>
     </div>
     <div class="library-section">
-      <ul>
-        <li><a href="https://dweb.link/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">Rules of Civility</a>
-          <p>_The inaugural entry, a tender dedication to mothers on their special day, marking the library’s loving birth._</p>
-        </li>
-        <li><a href="https://dweb.link/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">Leaves of Grass</a>
-          <p>_Born as “Learn’d Astronomer,” this grew with the library’s vision, embracing the vastness of the human spirit._</p>
-        </li>
-        <li><a href="https://dweb.link/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">Travels of Little Baron Trump</a>
-          <p>_A playful first request, this whimsical tale danced into our collection, sparking joy in our early days._</p>
-        </li>
-        <li><a href="https://dweb.link/ipfs/QmWp5MbCDKUegUbpswDvQ6vLy8zdczBug6QT6KJKTktzZx" target="_blank">The Vegetable Garden</a>
-          <p>_A milestone of growth, this first PDF upload nurtured our craft with its earthy wisdom._</p>
-        </li>
-        <li><a href="https://dweb.link/ipfs/bafybeibkdfozrjxqla4peqd4b5bstpjcwrot3b67tnonktykwe5v4jkzhi" target="_blank">The Secret Teachings of All Ages</a>
-          <p>_The second cherished request from our Dogecoin community, this mystical tome deepened our soulful roots._</p>
-        </li>
-        <li><a href="https://gateway.pinata.cloud/ipfs/bafybeihkps2exbyd6hgzukwlfvajjfi4m2o4h7jfomepgr2ay7vnflfgda" target="_blank">Little Nemo in Slumberland</a>
-          <p>_Inspired by the Dogecoin community’s comic call, this first full-color entry brought a vibrant conversion challenge._</p>
-        </li>
-        <li><a href="https://bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue.ipfs.dweb.link?filename=The%20Art%20of%20War.txt" target="_blank">The Art of War</a>
-          <p>_A Dogecoin community request, this strategic classic sparked the initial flame of our library’s vision._</p>
-        </li>
-        <li><a href="https://gateway.pinata.cloud/ipfs/QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh" target="_blank">The Road Not Taken</a>
-          <p>_A milestone of innovation, this first Python and VSCode script stepped us beyond manual paths._</p>
-        </li>
-      </ul>
-      <div class="contact">
-        <p>Have questions or suggestions? Reach out on X: <a href="https://x.com/StarshiningDoge" target="_blank">@StarshiningDoge</a></p>
+      <h2>Explore the Collection</h2>
+      <button class="collapsible">Rules of Civility</button>
+      <div class="content">
+        <p><a href="https://dweb.link/ipfs/QmTgWkL1zbWaUNizZekbgbcivfT9h3bDpUL6mKQHp6i6Bj" target="_blank">View Work</a> - _The inaugural entry, a tender dedication to mothers on their special day, marking the library’s loving birth._</p>
       </div>
-    </div>
-  </div>
-</body>
-</html>
+      <button class="collapsible">Leaves of Grass</button>
+      <div class="content">
+        <p><a href="https://dweb.link/ipfs/QmUwbjjQL8zigG4JCojuNjws56KtmXDNaf1XsrMtkCcJha" target="_blank">View Work</a> - _Born as “Learn’d Astronomer,” this grew with the library’s vision, embracing the vastness of the human spirit._</p>
+      </div>
+      <button class="collapsible">Travels of Little Baron Trump</button>
+      <div class="content">
+        <p><a href="https://dweb.link/ipfs/QmTsD2paG4hQUzErdRZQUckRkHkLYndYpndbQoe7xCjoCe" target="_blank">View Work</a> - _A playful first request, this whimsical tale danced into our collection, sparking joy in our early days._</p>
+      </div>
+      <button class="collapsible">The Vegetable Garden</button>
+      <div class="content">
+        <p><a href="https://dweb.link/ipfs/QmWp5MbCDKUegUbpswDvQ6vLy8zdczBug6QT6KJKTktzZx" target="_blank">View Work</a> - _A milestone of growth, this first PDF upload nurtured our craft with its earthy wisdom._</p>
+      </div>
+      <button class="collapsible">The Secret Teachings of All Ages</button>
+      <div class="content">
+        <p><a href="https://dweb.link/ipfs/bafybeibkdfozrjxqla4peqd4b5bstpjcwrot3b67tnonktykwe5v4jkzhi" target="_blank">View Work</a> - _The second cherished request from our Dogecoin community, this mystical tome deepened our soulful roots._</p>
+      </div>
+      <button class="collapsible">Little Nemo in Slumberland</button>
+      <div class="content">
+        <p><a href="https://gateway.pinata.cloud/ipfs/bafybeihkps2exbyd6hgzukwlfvajjfi4m2o4h7jfomepgr2ay7vnflfgda" target="_blank">View Work</a> - _Inspired by the Dogecoin community’s comic call, this first full-color entry brought a vibrant conversion challenge._</p>
+      </div>
+      <button class="collapsible">The Art of War</button>
+      <div class="content">
+        <p><a href="https://bafybeigvq5367q7tciann736aw7lvkklfrifrtn5xdulyriwijsb2a7oue.ipfs.dweb.link?filename=The%20Art%20of%20War.txt" target="_blank">View Work</a> - _A Dogecoin community request, this strategic classic sparked the initial flame of our library’s vision._</p>
+      </div>
+      <button class="collapsible">The Road Not Taken</button>
+      <div class="content">
+        <p><a href="https://gateway.pinata.cloud/ipfs/QmdiRVqYeAGaZ4pHv9pjpBGyULa6k9hq9hmBMxfbNzmTdh" target="_blank">View Work</a> - _A milestone of innovation, this first Python and VSCode script stepped us beyond manual paths._</p>
+      </div>
+      <button class="collapsible">The Children's Own Longfellow (Vietnamese/English)</button>
+      <div class="content">
+        <p><a href="https://gateway.pinata.cloud/ipfs/bafybeicb3yciyaebp2rgjn45vhzmy7ljfb7zg3ftbe
