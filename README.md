@@ -92,6 +92,16 @@
 
 ---
 
+### *Mother Goose Melodies* by Frederic Ayres
+
+- **TXID**: f1026245bfcebc9d7bb7be60ceea3fdfdd7b73ac02bdcdee37f261acbd89b360
+- **CID**: bafybeia7oizeusrwrjg6op275xdqhudj4543jjnpik2eqncfnndveln2rq
+- **IPFS Link**: [Access on IPFS](https://dweb.link/ipfs/bafybeia7oizeusrwrjg6op275xdqhudj4543jjnpik2eqncfnndveln2rq)
+- **Date**: _11/14/2025_
+  - *Note*: A lullaby reborn for the newest voices in the chorus—curiosity on IPFS, strength on Dogecoin, harmony in every page. Eight jingles, illustrated with Rackham’s magic, now sing forever in the Unburnable Library.
+
+---
+
 ## Curated by The Unburnable Library
 This sacred collection preserves the soul of timeless works on the Dogecoin blockchain, safeguarding their legacy through the eternal embrace of decentralized storage. 
 
